@@ -8,7 +8,7 @@
 
             <div class="navbar-header">
                
-                <a href="index.html" class="site-title"><span>Document</span>Classification</a>
+                <a href="/" class="site-title"><span>Document</span>Classification</a>
 
             </div><!-- /.navbar-header -->
 
@@ -20,8 +20,8 @@
                     {% if request.user.is_authenticated %}
                     <li><a href="{% url 'upload' %}">Upload</a></li>
                     {%endif%}
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li class="" ><a href="{% url 'contact' %}">Contact</a></li>
                     {% if request.user.is_authenticated %}
                     <li><a href="{% url 'account_logout' %}">Logout</a></li>
